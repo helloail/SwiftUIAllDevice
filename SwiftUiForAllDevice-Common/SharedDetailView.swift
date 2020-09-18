@@ -8,14 +8,25 @@
 
 import SwiftUI
 
+
 struct SharedDetailView: View {
+    let people : People
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack{
+            Image(people.image)
+                .resizable()
+                .frame(width: 100, height: 100)
+            Text(people.name)
+        }
+        
     }
 }
 
 struct SharedDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        SharedDetailView()
+        
+        SharedDetailView(people: People(name: "adbandhb h", description: "ksdnns", image: "2"))
     }
 }
+

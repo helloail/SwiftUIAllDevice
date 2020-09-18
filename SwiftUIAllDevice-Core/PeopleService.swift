@@ -7,13 +7,13 @@
 //
 
 import Foundation
-class AnimalService  {
-    static func getAll() -> [Animal] {
+class PeopleService  {
+    static func getAll() -> [People] {
         return [
-            Animal(name: "dsvad", description: "sdhhs", image: "1"),
-            Animal(name: "hhcsfsfsdh", description: "sdhhs", image: "2"),
-            Animal(name: "hhudh", description: "sdhhs", image: "3"),
-            Animal(name: "hhcadaaudh", description: "sdhhs", image: "4")
+            People(name: "dsvad", description: "sdhhs", image: "1"),
+            People(name: "hhcsfsfsdh", description: "sdhhs", image: "2"),
+            People(name: "hhudh", description: "sdhhs", image: "3"),
+            People(name: "hhcadaaudh", description: "sdhhs", image: "4")
         ]
     }
 }

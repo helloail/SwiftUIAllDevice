@@ -7,14 +7,14 @@
 //
 
 import Foundation
-struct Animal : Hashable {
+struct People : Hashable {
     let name : String
     let description : String
     let image : String
 }
 
-extension Animal {
-    static var placeholder : Animal {
-        return Animal(name: "budi", description: "sdkmns", image: "dsnjnfsjn")
+extension People {
+    static var placeholder : People {
+        return People(name: "budi", description: "sdkmns", image: "dsnjnfsjn")
     }
 }

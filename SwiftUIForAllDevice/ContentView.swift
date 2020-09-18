@@ -9,8 +9,24 @@
 import SwiftUI
 
 struct ContentView: View {
+    private var peopleservice = PeopleService.getAll()
+    
     var body: some View {
-        Text("Hello, World!")
+        
+        NavigationView{
+            List(self.peopleservice, id: \.name){ people in
+                NavigationLink(destination: SharedDetailView(people: people)) {
+                    HStack{
+                        Image(people.image)
+                            .resizable()
+                            .frame(width: 100, height: 100)
+                        Text(people.name)
+                    }
+                }
+            }
+                
+            .navigationBarTitle("Bakol Kopi")
+        }
     }
 }
 
